@@ -15,6 +15,8 @@ import Insurance from "./pages/Insurance";
 import Loans from "./pages/Loans";
 import EmergencyFund from "./pages/EmergencyFund";
 import NotFound from "./pages/NotFound";
+import ProjectDetails from "./pages/ProjectDetails";
+import BrowseProjects from "./pages/BrowseProjects";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/investments" element={<Investments />} />
+            <Route path="/projects" element={<BrowseProjects />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/insurance" element={<Insurance />} />
             <Route path="/loans" element={<Loans />} />
             <Route path="/emergency-fund" element={<EmergencyFund />} />
